@@ -1,0 +1,60 @@
+{
+	"name": "project-template",
+	"version": "0.0.0",
+	"keywords": [
+		"project",
+		"template"
+	],
+
+	"description": "project-template",
+	"homepage": "https://ymeine.github.io/project-template",
+
+	"contributors": [
+		{
+			"name": "Yannick Meine",
+			"email": "yannick.meine@gmail.com",
+			"url": "http://ymeine.github.io"
+		}
+	],
+	"licenses": [
+		"MIT"
+	],
+
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ymeine/project-template"
+	},
+	"bugs": {
+		"url": "https://github.com/ymeine/project-template/issues"
+	},
+
+
+
+	"main": "src/index.js",
+	"bin": {
+		"project-template": "bin/cli"
+	},
+	"scripts": {
+		"build": "node scripts/build.js",
+		"start": "node src/index.js",
+
+		"test": "mocha",
+
+		"profile": "node --prof src/index.js"
+	},
+
+	"preferGlobal": true,
+	"private": false,
+
+
+	"engineStrict": false,
+	"engines": {
+		"node": "*"
+	},
+	"devDependencies": {
+		"mocha": "*"
+	},
+	"dependencies": {
+
+	}
+}
