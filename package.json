@@ -30,7 +30,7 @@
 
 
 
-	"main": "src/index.js",
+	"main": "src/index",
 	"bin": {
 		"project-template": "bin/cli"
 	},
