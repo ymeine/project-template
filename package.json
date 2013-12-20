@@ -1,39 +1,36 @@
 {
 	"name": "project-template",
 	"version": "0.0.0",
+	"description": "project-template",
 	"keywords": [
 		"project",
 		"template"
 	],
 
-	"description": "project-template",
 	"homepage": "https://ymeine.github.io/project-template",
+	"bugs": "https://github.com/ymeine/project-template/issues",
 
-	"contributors": [
-		{
-			"name": "Yannick Meine",
-			"email": "yannick.meine@gmail.com",
-			"url": "http://ymeine.github.io"
-		}
-	],
-	"licenses": [
-		"MIT"
-	],
+	"license": "MIT",
+
+	"author": {
+		"name": "Yannick Meine",
+		"email": "yannick.meine@gmail.com",
+		"url": "http://ymeine.github.io"
+	},
 
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/ymeine/project-template"
 	},
-	"bugs": {
-		"url": "https://github.com/ymeine/project-template/issues"
-	},
 
 
 
 	"main": "src/index",
+
 	"bin": {
 		"project-template": "bin/cli"
 	},
+
 	"scripts": {
 		"build": "node scripts/build.js",
 		"start": "node src/index.js",
@@ -43,13 +40,22 @@
 		"profile": "node --prof src/index.js"
 	},
 
-	"preferGlobal": true,
-	"private": false,
+	"directories": {
+		"lib": "./src",
+		"doc": "./doc",
+		"bin": "./bin"
+	},
 
+
+
+
+	"preferGlobal": false,
+	"private": true,
 
 	"engineStrict": false,
 	"engines": {
-		"node": "*"
+		"node": "*",
+		"npm": "*"
 	},
 	"devDependencies": {
 		"mocha": "*"
